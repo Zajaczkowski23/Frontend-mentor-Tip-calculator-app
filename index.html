@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+  <section class="main">
+    <div class="main-title">Spli<br/>
+      tter</div>
+    <main class="container">
+      <div class="bill-section">
+        <div class="bill">
+          <h3 class="titles">Bill</h3>
+          <div class="money-box">
+            <object data="images/icon-dollar.svg" class="money-icon"></object>
+            <input id="text-box" class="text" type="number" placeholder="0"></input>
+          </div>
+        </div>
+  
+        <div class="tip">
+          <h3 class="titles">Select Tip %</h3>
+          <div class="tip-boxes">
+            <button class="box" value="5">5%</button>
+            <button class="box" value="10">10%</button>
+            <button class="box" value="15">15%</button>
+            <button class="box" value="25">25%</button>
+            <button class="box" value="50">50%</button>
+            <input id="box-custom" class="box" type="number" placeholder="Custom"></input>
+          </div>
+        </div>
+  
+        <div class="people">
+          <h3 class="titles">Number of People</h3>
+          <div class="money-box">
+            <object data="images/icon-person.svg" class="money-icon"></object>
+            <input id="text-box2" class="text" type="number" placeholder="0" min="0"></input>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="calculated-section">
+        <div class="tip-amount">
+          <div class="text-box">
+            <h3 class="title-white">Tip Amount</h3>
+            <h5 class="person">/ person</h5>
+          </div>
+          <div class="amount tip-person">$0.00</div>
+        </div>
+
+        <div class="total">
+          <div class="text-box">
+            <h3 class="title-white">Total</h3>
+            <h5 class="person">/ person</h5>
+          </div>
+          <div class="amount tip-total">$0.00</div>
+        </div>
+
+        <button class="reset">Reset</button>
+      </div>
+    </main>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
